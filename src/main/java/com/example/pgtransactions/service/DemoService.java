@@ -23,7 +23,7 @@ public class DemoService {
 		return internal();
 	}
 
-	@Transactional
+//	@Transactional
 	public Mono<Void> internal() {
 		Mono<EntityA> clash = Mono.just(EntityA.builder().name("clash").build()).flatMap(repositoryA::save);
 		Mono<EntityB> ok = Mono.just(EntityB.builder().name("ok").build()).flatMap(repositoryB::save);

@@ -15,7 +15,7 @@ public class DemoController {
 	private final DemoService demoService;
 
 	@PostMapping("/")
-//	@Transactional -> works as expected
+//	@Transactional
  	public Mono<Void> postEntities() {
 		return demoService.doSomething();
 	}
