@@ -1,0 +1,9 @@
+spring:
+  r2dbc:
+    url: "r2dbc:postgresql://172.17.0.2:5432/postgres"
+    username: postgres
+    password: postgres
+
+logging:
+  level:
+    root: DEBUG
